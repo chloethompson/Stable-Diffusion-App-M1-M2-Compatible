@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<div class="topnav">
+  <h2>
+    Stable Diffusion Front End 
+  </h2>
+</div>
+
+<br/><br/> 
+  <div class="form-style-5">
+  <form method="POST" action="">
+    <fieldset>
+      <legend class="header"><span class="number">...</span> Image Prompt</legend>
+      <input type = "text" name = "prompt" />
+      <br/><br/>
+      <button type="submit">Submit</button>
+  </fieldset>
+  </form>
+
+    {% if image_data %}
+      
+      <div>
+          <img style='height: 100%; width: 100%; object-fit: contain' src="data:image/jpeg;base64,{{ image_data }}" alt="Generated Image">
+      </div>
+
+    {% endif %}
+</div>
+
+</html>

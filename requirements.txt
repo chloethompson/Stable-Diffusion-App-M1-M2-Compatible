@@ -1,0 +1,5 @@
+flask_ngrok
+diffusers==0.4.1 
+transformers 
+ftfy
+pyngrok
